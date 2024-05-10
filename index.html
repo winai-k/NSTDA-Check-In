@@ -29,11 +29,20 @@
         </select>
         <br><br>
           <label class="form-check-label free"></label>
-          <input class="form-check-input" type="radio" id="locNSTDA" name="select_loc" value="NSTDA" checked>
-          <label class="form-check-label" for="locNSTDA">NSTDA</label>
-          <!-- <input class="form-check-input" type="radio" id="locDR" name="select_loc" value="DR"> -->
-          <!-- <label class="form-check-label" for="locDR">DR</label> -->
-          <label class="form-check-label free"> </label>
+          <input class="form-check-input" type="radio" id="locNSTDAR" name="select_loc" value="NSTDA-R" checked>
+          <label class="form-check-label" for="locNSTDA">NSTDA-Rangsit</label>
+        
+          <input class="form-check-input" type="radio" id="locNSTDAY" name="select_loc" value="NSTDA-Y">
+          <label class="form-check-label" for="locNSTDAY">NSTDA-Yothi</label>
+        <br>
+          <label class="form-check-label free"></label>
+          <input class="form-check-input" type="radio" id="locNSTDAS" name="select_loc" value="NSTDA-S">
+          <label class="form-check-label" for="locNSTDAS">NSTDA-Software Park</label>
+        
+          <input class="form-check-input" type="radio" id="locNSTDAE" name="select_loc" value="NSTDA-E">
+          <label class="form-check-label" for="locNSTDAE">NSTDA-EECi</label>
+        <br>
+          <label class="form-check-label free"></label>
           <input class="form-check-input" type="radio" id="locWFH" name="select_loc" value="WFH">
           <label class="form-check-label" for="locWFH">WFH</label>
         <br><br>
@@ -122,13 +131,6 @@ function showPosition(position) {
     const checked = [...document.getElementsByName("select_loc")].find(e => e.checked);
     var sloc = checked.value;
 
-  /*
-  x.innerHTML = "<br>Lat: " + tlat + ", Long: " + tlong + 
-  "<br>userId: " + uid + 
-  "<br>displayName: " + uname + ", your OS: " + xos +
-  "<br>shift: " + shift;
-  */
-
     var xmlhttp = new XMLHttpRequest();
     var theUrl = xurl+"?user="+uid+"&name="+uname+"&xos="+xos+"&sloc="+sloc+"&lat="+tlat+"&long="+tlong+"&ctype=IN&shift="+shift;
     xmlhttp.open('GET', theUrl);
@@ -165,13 +167,6 @@ function showPositionOut(position) {
     var shift = document.getElementById("shiftSelect").value;
     const checked = [...document.getElementsByName("select_loc")].find(e => e.checked);
     var sloc = checked.value;
-    
-  /*
-  x.innerHTML = "<br>Lat: " + tlat + ", Long: " + tlong + 
-  "<br>userId: " + uid + 
-  "<br>displayName: " + uname + ", your OS: " + xos +
-  "<br>shift: " + shift;
-  */
 
     var xmlhttp = new XMLHttpRequest();
     var theUrl = xurl+"?user="+uid+"&name="+uname+"&xos="+xos+"&sloc="+sloc+"&lat="+tlat+"&long="+tlong+"&ctype=OUT&shift="+shift;
