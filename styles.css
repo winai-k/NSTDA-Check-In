@@ -38,11 +38,19 @@ option.mblue:hover {
   color: white;
 }
 
+input.form-check-input {
+  padding: 5px;
+}
+
 label {
   text-align: left;
   width:50px;
   display: inline-block;
   color: white;
+}
+
+label.form-check-label {
+  padding: 5px;
 }
 
 label.free {
