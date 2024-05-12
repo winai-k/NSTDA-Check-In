@@ -28,23 +28,24 @@
           <!-- <option class="mblue" value="night" Align="center">NIGHT SHIFT</option> -->
         </select>
         <br><br>
-          <label class="form-check-label free"></label>
-          <input class="form-check-input" type="radio" id="locNSTDAR" name="select_loc" value="NSTDA-R" checked>
-          <label class="form-check-label" for="locNSTDA">NSTDA-Rangsit</label>
-        
-          <input class="form-check-input" type="radio" id="locNSTDAY" name="select_loc" value="NSTDA-Y">
-          <label class="form-check-label" for="locNSTDAY">NSTDA-Yothi</label>
-        <br>
-          <label class="form-check-label free"></label>
-          <input class="form-check-input" type="radio" id="locNSTDAS" name="select_loc" value="NSTDA-S">
-          <label class="form-check-label" for="locNSTDAS">NSTDA-Software Park</label>
-        
-          <input class="form-check-input" type="radio" id="locNSTDAE" name="select_loc" value="NSTDA-E">
-          <label class="form-check-label" for="locNSTDAE">NSTDA-EECi</label>
-        <br>
-          <label class="form-check-label free"></label>
-          <input class="form-check-input" type="radio" id="locWFH" name="select_loc" value="WFH">
-          <label class="form-check-label" for="locWFH">WFH</label>
+          <table>
+            <tr>
+              <td><input class="form-check-input" type="radio" id="locNSTDAR" name="select_loc" value="NSTDA-R" checked></td>
+              <td><label class="form-check-label" for="locNSTDA">สวทช-รังสิต</label></td>
+              <td><input class="form-check-input" type="radio" id="locNSTDAY" name="select_loc" value="NSTDA-Y"></td>
+              <td><label class="form-check-label" for="locNSTDAY">สวทช-โยธี</label></td>
+            </tr>
+            <tr>
+              <td><input class="form-check-input" type="radio" id="locNSTDAS" name="select_loc" value="NSTDA-S"></td>
+              <td><label class="form-check-label" for="locNSTDAS">สวทช-Software Park</label></td>
+              <td><input class="form-check-input" type="radio" id="locNSTDAE" name="select_loc" value="NSTDA-E"></td>
+              <td><label class="form-check-label" for="locNSTDAE">สวทช-EECi</label></td>
+            </tr>
+            <tr>
+              <td><input class="form-check-input" type="radio" id="locWFH" name="select_loc" value="WFH"></td>
+              <td><label class="form-check-label" for="locWFH">WFH</label></td>
+            </tr>
+          </table>
         <br><br>
         <div>
           <button id="cin" type="button" class="btn btn-success button-w" onclick="checkclick(); getLocation()">Check-In</button>
